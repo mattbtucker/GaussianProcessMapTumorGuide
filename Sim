@@ -181,8 +181,8 @@ class ErrorSim():
         Npts_interp = self.Npts_Interp              # 300 points for interpolation
         Npts_ID = self.Npts_ID                      # The grid is 26 x 26
         Ratio = Npts_interp / Npts_ID               # The ratio of the mm to pixel coordinates -- 10 pixel / mm
-        x_offset = [0, 2]                           # mm
-        y_offset = [0, 2]                           # mm
+        x_offset = [0, 2]                           # Units in mm
+        y_offset = [0, 2]                           # Units in mm
 
         # Read the spec files from the Dataset
         Data_ID, Img_ID = self.ReadExpData_ID(Npts = np.int(Npts_ID))
